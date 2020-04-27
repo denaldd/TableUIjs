@@ -1,56 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TableUIJs</title>
-	<link rel="stylesheet" type="text/css" href="TableUIJs/Striped/striped.css">
-	<script src="TableUIJs/Striped/striped.js"></script>
-	<script src="TableUIJs/table.js"></script>
+	<title>Avenue.js Javascript</title>
+	<link rel="stylesheet" type="text/css" href="Components/index.css">
+	<link rel="stylesheet" type="text/css" href="Components/Forms/forms.css">
+	<link rel="stylesheet" type="text/css" href="Components/Buttons/buttons.css">
+	<link rel="stylesheet" type="text/css" href="Components/DataTable/dataTable.css">
+	<link rel="stylesheet" type="text/css" href="Components/Menu/menu.css">
+	<link rel="icon" href="images/63910722.jpeg" type="image/jpg" sizes="16x16">
 </head>
 <body>
-<div id="table"></div>
-<script>
-	//json type
-	const obj = [
-		{ 
-			fieldname: 'accountid', 
-			fieldlabel: 'AccountID', 
-			sortable: true,
-			editable: true
-		},
-		{ 
-			fieldname: 'account_no', 
-			fieldlabel: 'account_no', 
-			sortable: true,
-			editable: false
-		},
-		{ 
-			fieldname: 'accountname', 
-			fieldlabel: 'accountname', 
-			sortable: false,
-			editable: false
-		},
-		{ 
-			fieldname: 'account_type', 
-			fieldlabel: 'account_type', 
-			sortable: false,
-			editable: false
-		},
-		{ api: {
-				url: 'test.php',
-				method: 'post',
-				data: null
-			}
-		},
-		{ custom: {
-				orderBy: 'desc',
-				limitPerPage: 10,
-				pagination: true,
-				search: false,
-			}
-		}
-	];
-	var striped = new TableStriped(obj);
-	striped.__initTable('striped', 'table');
-</script>
+<div id="nav"></div>
+<div class="section group">
+<h1>Buttons</h1>
+<div id="button"></div>
+<h1>DataTable</h1>
+<div id="divid"></div>
+<div id="divid1"></div>
+<h1>Form</h1>
+<div id="inputid"></div>
+</div>
+<h1>GRID</h1>
+<div class="section group">
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+	<div class="col group-1" style="background: #d3d3d3">
+		1 of 12
+	</div>
+</div>
+<div class="section group">
+	<div class="col group-2" style="background: #d3d3d3">
+		2 of 12
+	</div>
+	<div class="col group-2" style="background: #d3d3d3">
+		2 of 12
+	</div>
+	<div class="col group-2" style="background: #d3d3d3">
+		2 of 12
+	</div>
+	<div class="col group-2" style="background: #d3d3d3">
+		2 of 12
+	</div>
+	<div class="col group-2" style="background: #d3d3d3">
+		2 of 12
+	</div>
+	<div class="col group-2" style="background: #d3d3d3">
+		2 of 12
+	</div>
+</div>
+<div class="section group">
+	<div class="col group-3" style="background: #d3d3d3">
+		3 of 12
+	</div>
+	<div class="col group-3" style="background: #d3d3d3">
+		3 of 12
+	</div>
+	<div class="col group-3" style="background: #d3d3d3">
+		3 of 12
+	</div>
+	<div class="col group-3" style="background: #d3d3d3">
+		3 of 12
+	</div>
+</div>
+<div class="section group">
+	<div class="col group-4" style="background: #d3d3d3">
+		4 of 12
+	</div>
+	<div class="col group-4" style="background: #d3d3d3">
+		4 of 12
+	</div>
+	<div class="col group-4" style="background: #d3d3d3">
+		4 of 12
+	</div>
+</div>
+<div class="section group">
+	<div class="col group-6" style="background: #d3d3d3">
+		6 of 12
+	</div>
+	<div class="col group-6" style="background: #d3d3d3">
+		6 of 12
+	</div>
+</div>
+<div class="section group">
+	<div class="col group-12" style="background: #d3d3d3">
+		12 of 12
+	</div>
+</div>
+<script type="module" src="index.js"></script>
 </body>
 </html>
